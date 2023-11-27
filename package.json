@@ -1,0 +1,29 @@
+{
+  "name": "webhooks-temporal-poc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Harshit Budhraja",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@temporalio/activity": "^1.8.6",
+    "@temporalio/client": "^1.8.6",
+    "@temporalio/common": "^1.8.6",
+    "@temporalio/worker": "^1.8.6",
+    "@temporalio/workflow": "^1.8.6",
+    "axios": "^1.6.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4"
+  },
+  "scripts": {
+    "main": "ts-node src/main.ts",
+    "worker": "ts-node src/worker.ts",
+    "start": "yarn run main && yarn run worker"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.202",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
